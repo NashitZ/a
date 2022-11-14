@@ -1,1 +1,15 @@
-
+class Student:
+    ##atributos##
+    id=0
+    run=0
+    dv=´´
+    alternative_id=´´
+    names=´´
+    middle_surname:´´
+    last_surname:´´
+    ##fin atributos##
+    ##metodos##
+    def __init__(self):
+    
+    ##fin metodos##
+    
