@@ -1,0 +1,47 @@
+class Student:
+    ##atributos##
+    id=0
+    run=0
+    dv=''
+    alternative_id=''
+    names=''
+    middle_surname=''
+    last_surname=''
+    ##fin atributos##
+    ##metodos##
+    def __init__(self,id,run,dv,alternative_id,names,middle_surname,last_surname):
+        self.id=id ##TODO que setee autoincrementble
+        self.run=run
+        self.dv=dv
+        self.alternative_id=alternative_id
+        self.names=names
+        self.middle_surname=middle_surname
+        self.last_surname=last_surname
+    ##fin metodos##
+
+id=0
+run=0
+dv=''
+alternative_id=''
+names=''
+middle_surname=''
+last_surname=''    
+names = str(input("ingresar nombres: "))
+middle_surname=input("ingresar primer apellido: ")
+last_surname=input("ingresar segundo apellido: ")
+    
+print("ingresar metodo de identificacion")
+print("1. run")
+print("2. otro tipo de identificacion")
+    
+    
+x=int(input())
+    
+if (x==1):
+    run=int(input("ingrese su run sin el digito verificador: "))
+    dv=input("ingrese digito verificador")
+elif (x==2):
+    alternative_id=int(input("ingrese su identificacion: "))
+else:
+    print("invalido")
+   
