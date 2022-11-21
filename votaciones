@@ -1,0 +1,42 @@
+class Candidate():
+    #atributos de clase
+    nombre=''
+    cantidad_votos=0
+    partido_pol=''
+    
+    #constructor
+    def __init__(nombre,cantidad_votos,partido_pol):
+        self.nombre = nombre
+        self.cantidad_votos = cantidad_votos
+        self.partido_pol = partido_pol
+        
+    
+    #metodo
+    def conteov(self):
+        self.cantidad_votos = self.cantidad_votos + 1
+    
+#main
+
+candidatos = []
+while True: 
+    print("Quiere agregar un nuevo candidato? (Si/No)")
+    respuesta = input("> ")
+    if respuesta == "No":
+        break
+
+    print("Ingresa el nombre del candidato: ")
+    nombre = input("> ")
+
+    print("Ingrese el partido politico: ")
+    partido_pol = ("> ")
+
+    candidatos.append(Candidate(nombre,0,partido_pol))
+
+while True:
+    print("Candidatos: ")
+    for i in range(len(candidatos)):
+        print("Nombre: "+candidatos[i].nombre)
+        print("Partido: "+candidatos[i].partido_pol)
+        print("Cantidad de votos: "+candidatos[i].cantidad_votos)
+
+
